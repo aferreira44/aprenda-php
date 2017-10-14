@@ -7,6 +7,9 @@
     <title>Classes 101</title>
 </head>
 <body>
+    <a href="/php-pdo/about">About Us</a>
+    <a href="/php-pdo/about/culture">About Our Culture</a>
+    <a href="/php-pdo/contact">Contact</a>
     <ul>
         <?php foreach ($tasks as $task) : ?>
             <li>
