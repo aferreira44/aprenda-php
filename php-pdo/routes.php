@@ -1,15 +1,15 @@
 <?php
 
-// GET
+// GET - PagesController
 
-$router->get('php-pdo', 'controllers/index.php');
+$router->get('php-pdo', 'PagesController@home');
+$router->get('php-pdo/about', 'PagesController@about');
+$router->get('php-pdo/contact', 'PagesController@contact');
 
-$router->get('php-pdo/about', 'controllers/about.php');
+// GET - UsersController
 
-$router->get('php-pdo/about/culture', 'controllers/about-culture.php');
+$router->get('php-pdo/users', 'UsersController@index');
 
-// POST
+// POST - UsersController
 
-$router->post('php-pdo/contact', 'controllers/contact.php');
-
-$router->post('php-pdo/names', 'controllers/add-name.php');
+$router->post('php-pdo/users', 'UsersController@store');
